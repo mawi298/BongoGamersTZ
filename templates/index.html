@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block title %}Home | BongoGamersTZ{% endblock %}
+
+{% block content %}
+<section class="hero text-white text-center d-flex align-items-center justify-content-center">
+  <div>
+    <h1 class="display-5 fw-bold">🎮 BongoGamersTZ</h1>
+    <p class="lead">Home Of Gamers</p>
+    <a href="#" class="btn btn-primary btn-lg mt-3 shadow rounded-pill">Join Us</a>
+  </div>
+</section>
+
+<div class="row mt-5">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">🔥 Trending Game: eFootball</h5>
+                <p class="card-text">Discover why eFootball is dominating TZ streets — and learn how to rank up fast!</p>
+                <a href="{{ url_for('games') }}" class="btn btn-outline-primary btn-sm rounded-pill">View More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">📺 Highlight Reels</h5>
+                <p class="card-text">Watch insane goals and crazy skills by local gamers. Got a clip? Send it in!</p>
+                <a href="{{ url_for('highlights') }}" class="btn btn-outline-primary btn-sm rounded-pill">Watch</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">💡 Tips & Tricks</h5>
+                <p class="card-text">Learn how to build the best formations, improve your defense, and more.</p>
+                <a href="{{ url_for('tips') }}" class="btn btn-outline-primary btn-sm rounded-pill">Get Tips</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
